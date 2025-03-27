@@ -79,7 +79,7 @@ bool true_triangle_condition(const Graph& g){
     boost::graph_traits<Graph>::vertex_iterator vi, vi_end;
     for (boost::tie(vi, vi_end) = boost::vertices(g); vi != vi_end; ++vi){
         Vertex u = *vi;
-        boost:: graph_traits<Graph>::out_edge_iterator ei1, ei1_end;
+        boost::graph_traits<Graph>::out_edge_iterator ei1, ei1_end;
         for(boost::tie(ei1, ei1_end) = boost::out_edges(u, g); ei1 != ei1_end; ++ei1){
             Vertex v = boost::target(*ei1, g);
             double d_uv = boost::get(weight_map, *ei1);
