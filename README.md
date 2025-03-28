@@ -54,6 +54,7 @@ Algorytm polega na iteracyjnym usuwaniu pierwszej napotkanej krawędzi oraz wszy
 
  **Przykładowe działanie:**
 ![](2_przybliżony_dla_vertex_cover/ezgif.com-animated-gif-maker(1).gif)
+![](2_przybliżony_dla_vertex_cover/ezgif.com-animated-gif-maker.gif)
 ---
 
 ## 3. Algorytm 2-przybliżony dla drzewa Steinera
@@ -66,6 +67,8 @@ Algorytm Kou, Markovsky'ego i Bermana znajduje przybliżone minimalne drzewo Ste
 
 - Zapewnia 2-przybliżone rozwiązanie optymalnego drzewa.
 
+ **Przykładowe działanie:**
+![obraz](https://github.com/user-attachments/assets/15612950-74a7-48ab-a92e-af00ec376493)
 
 ---
 
@@ -84,6 +87,8 @@ Algorytm Christofidesa znajduje minimalny cykl Hamiltona dla grafu spełniające
 - Zapewnia 1.5-przybliżone rozwiązanie.
 
 - Złożoność: $O(n^3)$.
+ **Przykładowe działanie:**
+![obraz](https://github.com/user-attachments/assets/f87634f7-88c9-4f85-b50e-a254e7a6a61d)
 
 
 ---
@@ -97,3 +102,14 @@ Metoda Critical Path Method (CPM) służy do harmonogramowania projektów poprze
 - Wyjście: Ścieżka krytyczna oraz minimalny czas ukończenia projektu.
 
 - Złożoność: $O(n + m)$ dla zadań $n$ i zależności $m$.
+ **Przykładowe działanie:**
+- ![obraz](https://github.com/user-attachments/assets/197373bc-e915-46b4-bf5c-ed8c2cc7d21f)
+
+
+# Technologie
+
+- Rust
+
+- R z biblioteką igraph
+
+- C++ z biblioteką Boost
