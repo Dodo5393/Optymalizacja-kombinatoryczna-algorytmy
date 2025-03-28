@@ -1,4 +1,4 @@
-
+![obraz](https://github.com/user-attachments/assets/caa20c5d-14c8-4a16-9065-d46c87d322c2)
 ## Spis treści
 
 - 1. Weryfikacja obecności cyklu C3
@@ -39,6 +39,7 @@ Drugie podejście polega na podniesieniu macierzy sąsiedztwa do potęgi trzecie
 
 
  **Przykładowe działanie:**
+![obraz](https://github.com/user-attachments/assets/fec2a056-6a49-4936-aee5-d28a2097f23c)
 
 ---
 
@@ -51,8 +52,8 @@ Algorytm polega na iteracyjnym usuwaniu pierwszej napotkanej krawędzi oraz wszy
 - Zapewnia wynik nie gorszy niż dwukrotność optymalnego pokrycia.
 
 
-📌 **Przykładowe działanie:**
-
+ **Przykładowe działanie:**
+![](2_przybliżony_dla_vertex_cover/ezgif.com-animated-gif-maker(1).gif)
 ---
 
 ## 3. Algorytm 2-przybliżony dla drzewa Steinera
