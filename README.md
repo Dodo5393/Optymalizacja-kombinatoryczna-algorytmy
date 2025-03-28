@@ -21,6 +21,7 @@
 ## 1. Weryfikacja obecności cyklu C3
 
 Cykl C3 to cykl trójelementowy, czyli trójkąt w grafie. Implementacja obejmuje dwa podejścia do znalezienia takiego cyklu.
+Implementacja w Rust.
 
 ### 1.1 Naiwny algorytm
 
@@ -47,6 +48,7 @@ Drugie podejście polega na podniesieniu macierzy sąsiedztwa do potęgi trzecie
 ## 2. Algorytm 2-przybliżony dla problemu Vertex Cover
 
 Algorytm polega na iteracyjnym usuwaniu pierwszej napotkanej krawędzi oraz wszystkich incydentnych do niej wierzchołków, co skutkuje pokryciem wierzchołkowym.
+Implementacja w R.
 
 - Złożoność obliczeniowa: $O(n + m)$
 
@@ -59,6 +61,7 @@ Algorytm polega na iteracyjnym usuwaniu pierwszej napotkanej krawędzi oraz wszy
 ---
 
 ## 3. Algorytm 2-przybliżony dla drzewa Steinera
+Implementacja w c++.
 
 Algorytm Kou, Markovsky'ego i Bermana znajduje przybliżone minimalne drzewo Steiner'a dla podanego zbioru terminali.
 
@@ -77,7 +80,7 @@ Algorytm Kou, Markovsky'ego i Bermana znajduje przybliżone minimalne drzewo Ste
 ## 4. Algorytm Christofidesa
 
 Algorytm Christofidesa znajduje minimalny cykl Hamiltona dla grafu spełniającego nierówność trójkąta.
-
+Implementacja w c++.
 - Algorytm:
 
     1. Oblicza minimalne drzewo rozpinające (MST).
@@ -99,7 +102,7 @@ Algorytm Christofidesa znajduje minimalny cykl Hamiltona dla grafu spełniające
 ## 5. Metoda ścieżki krytycznej (CPM)
 
 Metoda Critical Path Method (CPM) służy do harmonogramowania projektów poprzez znalezienie najdłuższej ścieżki w grafie zadań.
-
+Implementacja w c++.
 - Wejście: Graf skierowany, gdzie wierzchołki to zadania, a krawędzie określają zależności.
 
 - Wyjście: Ścieżka krytyczna oraz minimalny czas ukończenia projektu.
