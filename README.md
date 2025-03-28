@@ -1,4 +1,4 @@
-![obraz](https://github.com/user-attachments/assets/caa20c5d-14c8-4a16-9065-d46c87d322c2)
+
 ## Spis treści
 
 - 1. Weryfikacja obecności cyklu C3
@@ -39,6 +39,7 @@ Drugie podejście polega na podniesieniu macierzy sąsiedztwa do potęgi trzecie
 
 
  **Przykładowe działanie:**
+ 
 ![obraz](https://github.com/user-attachments/assets/fec2a056-6a49-4936-aee5-d28a2097f23c)
 
 ---
@@ -68,6 +69,7 @@ Algorytm Kou, Markovsky'ego i Bermana znajduje przybliżone minimalne drzewo Ste
 - Zapewnia 2-przybliżone rozwiązanie optymalnego drzewa.
 
  **Przykładowe działanie:**
+ 
 ![obraz](https://github.com/user-attachments/assets/15612950-74a7-48ab-a92e-af00ec376493)
 
 ---
@@ -88,7 +90,8 @@ Algorytm Christofidesa znajduje minimalny cykl Hamiltona dla grafu spełniające
 
 - Złożoność: $O(n^3)$.
  **Przykładowe działanie:**
-![obraz](https://github.com/user-attachments/assets/f87634f7-88c9-4f85-b50e-a254e7a6a61d)
+  
+- ![obraz](https://github.com/user-attachments/assets/f87634f7-88c9-4f85-b50e-a254e7a6a61d)
 
 
 ---
@@ -103,6 +106,7 @@ Metoda Critical Path Method (CPM) służy do harmonogramowania projektów poprze
 
 - Złożoność: $O(n + m)$ dla zadań $n$ i zależności $m$.
  **Przykładowe działanie:**
+  
 - ![obraz](https://github.com/user-attachments/assets/197373bc-e915-46b4-bf5c-ed8c2cc7d21f)
 
 
