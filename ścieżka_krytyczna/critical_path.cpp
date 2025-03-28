@@ -187,7 +187,7 @@ int main() {
     std::vector<Task> critical_path = find_critical_path(graph);
     std::cout << "\nŚcieżka krytyczna: ";
     for (Task v : critical_path) {
-        std::cout << v << " ";
+        std::cout << v + 1<< " ";
     }
     std::cout << std::endl;
 

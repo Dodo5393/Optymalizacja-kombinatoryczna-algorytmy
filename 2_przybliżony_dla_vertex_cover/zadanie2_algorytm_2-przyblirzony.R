@@ -40,34 +40,42 @@ plot(g, vertex.label = V(g)$name, vertex.color = "lightblue", vertex.size = 30,
 # Algorytm 2-przybliżony dla problemu vertex cover
 vertex_cover <- c()  # Pusty zbiór pokrycia
 g_current <- g       # Kopia grafu do modyfikacji
+# Inicjalizacja licznika dla nazw plików
+iteration <- 1  
 
 while (ecount(g_current) > 0) {
-  # Wybierz pierwszą krawędź
   edge <- E(g_current)[1]
-  endpoints <- ends(g_current, edge)  # Pobierz końce krawędzi
-
-  # Dodaj oba wierzchołki do vertex_cover
+  endpoints <- ends(g_current, edge)
   vertex_cover <- unique(c(vertex_cover, endpoints))
-
-  # Pobierz krawędzie incydentne dla obu wierzchołków
+  
   incident_edges_1 <- incident(g_current, V(g_current)[V(g_current)$name == endpoints[1]])
   incident_edges_2 <- incident(g_current, V(g_current)[V(g_current)$name == endpoints[2]])
   incident_edges <- unique(c(incident_edges_1, incident_edges_2))
   
-  # Usuń wszystkie krawędzie incydentne jednorazowo
   g_current <- delete_edges(g_current, incident_edges)
-
-  # Aktualizacja kolorów w oryginalnym grafie
   V(g)$color <- ifelse(V(g)$name %in% vertex_cover, "red", "lightblue")
-
-  # Wizualizacja obu grafów z grubszymi krawędziami
+  
+  # Zapis wykresów do plików PNG
+  png(filename = sprintf("iteracja_%02d_oryginalny.png", iteration), width = 800, height = 600)
   plot(g, vertex.color = V(g)$color, vertex.size = 20, edge.width = 4, edge.color = "black",
-       main = "Oryginalny graf z vertex cover")
+       main = sprintf("Iteracja %d - Oryginalny graf", iteration))
+  dev.off()
+  
+  png(filename = sprintf("iteracja_%02d_aktualny.png", iteration), width = 800, height = 600)
   plot(g_current, vertex.label = V(g_current)$name, vertex.color = "lightblue", vertex.size = 20,
-       edge.width = 4, edge.color = "black", main = "Aktualny graf (g_current)")
-
-  Sys.sleep(1)  # Opóźnienie dla lepszej widoczności
+       edge.width = 4, edge.color = "black", main = sprintf("Iteracja %d - Aktualny graf", iteration))
+  dev.off()
+  
+  Sys.sleep(1)
+  iteration <- iteration + 1  # Zwiększenie licznika
 }
+
+# Zapis finalnego wyniku
+png(filename = "finalny_vertex_cover.png", width = 800, height = 600)
+plot(g, vertex.color = V(g)$color, vertex.size = 20, edge.width = 4, edge.color = "black",
+     main = "Finalny zbiór vertex cover")
+dev.off()
+
 
 # Wyświetlenie wyniku
 cat("Finalny zbiór vertex cover:", paste(vertex_cover, collapse = ", "), "\n")
